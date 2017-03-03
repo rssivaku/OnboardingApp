@@ -1,0 +1,34 @@
+<!-- import polymer -->
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="seed-footer-styles.html">
+
+<dom-module id='seed-footer'>
+  <template>
+    <style include="seed-footer-styles"></style>
+    <div class="flex footer__container">
+      <div class="flex--left">
+      <img src="//mvp2-myge.gecdn.com/build/img/brand/ge-monogram-footer.png">
+      &nbsp;<span style = "position: absolute; bottom: 20px;color:#222222">Imagination at work</span>
+        </div>
+      <div class = "flex--right" style = "position:absolute;right:30px;bottom: 30px;">
+      <ul class="list-inline">
+        <template is="dom-repeat" style = "color:#222222" items=[[footerLinks]]>
+        <li><a class="footer__link" style = "color:#222222" target = "_blank" href="[[item.href]]">[[item.label]]</a></li>
+        </template>
+        <span class="footer__copy" style = "color:#222222">&copy;2017 General Electric</span>
+    </ul>
+    <div>
+
+
+    </div>
+  </template>
+  <script>
+  Polymer({
+    is: 'seed-footer',
+    properties: {
+      footerLinks: []
+    }
+  });
+  </script>
+</dom-module>

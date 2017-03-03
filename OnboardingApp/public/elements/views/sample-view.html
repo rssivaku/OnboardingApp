@@ -1,0 +1,26 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/px-sample-cards/blank-card.html">
+<link rel="import" href="../../bower_components/px-view-header/px-view-header.html">
+<link rel="import" href="../../bower_components/px-modal/px-modal.html"/>
+<link rel="import" href="../../bower_components/webcomponentsjs/webcomponents-lite.min.js"/>
+<link rel="import" href="../../bower_components/px-theme/px-theme-styles.html">
+<style include="px-theme-styles" is="custom-style"></style>
+<dom-module id="sample-view">
+  <template>
+    <div>
+      Hello I am naman
+      <px-modal btn-modal-positive="Continue" btn-modal-negative="Back" modal-heading="Inter Call Audio Bridge"><a href='javascript:void(0)'' class='modal-trigger'>Open Modal</a><p><b>Inter Call Audio Bridge</b></p><p>Step 1: To raise a request for intercall audio bridge, please <a href = "http://supportcentral.ge.com/products/sup_products.asp?prod_id=324526" target="_blank">Click here</a><br>Step 2: Login through your SSO credentials.
+      <br>Step 3: Click on "Raise an IT Request for Employee(SELF)" link present on the left column under the section"IT Asset Request".<br>Step 4: Fill your details and select "Audiobridge" as an option under Asset selection column.
+    <br>Step 5: Select type of bridge as "Intercall".<br>Step 6: You will receive an email with conference code and leadder pin after sometime. </p></px-modal>
+      </div>
+  </template>
+  <script>
+    Polymer({
+      is: 'sample-view',
+      properties: {},
+      ready: function() {
+        console.log('sample-view ready()')
+      }
+    });
+  </script>
+</dom-module>

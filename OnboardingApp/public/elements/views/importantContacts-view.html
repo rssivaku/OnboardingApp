@@ -1,0 +1,356 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/px-sample-cards/blank-card.html">
+<link rel="import" href="../../bower_components/px-view-header/px-view-header.html">
+<link rel="import" href="../../bower_components/px-modal/px-modal.html"/>
+<link rel="import" href="../../bower_components/webcomponentsjs/webcomponents-lite.min.js"/>
+<link rel="import" href="../../bower_components/px-theme/px-theme-styles.html">
+<style include="px-theme-styles" is="custom-style"></style>
+
+<style media="screen">
+.heading{
+  padding-left: 30px;
+}
+#headericon{
+  width: 0px;
+}
+#modal36,#modal41{
+  padding-left: 30px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+#modal37,#modal38,#modal39,#modal40,#modal42,#modal51,#modal54,#modal55 {
+  padding-right:5px;
+  padding-top: 5px;
+}
+.modal-trigger{
+  border: 1px solid #2886af;
+  border-radius: 5px;
+}
+.modal-trigger:hover{
+  cursor: pointer;
+  border: 3px solid #2886af;
+}
+.status_option{
+  color:#ffffff;
+  background-color: #fb2f28;
+}
+#modal36 header,#modal37 header,#modal38 header,#modal39 header,#modal40 header,#modal41 header,#modal42 header,#modal51 header,#modal54 header,#modal55 header {
+  border-bottom: 0 !important;
+}
+#modal36 #headertext{
+  margin-left: 12px;
+  margin-top: 40px !important;
+}
+#modal37 #headertext{
+  margin-left: 15px;
+  margin-top: 40px !important;
+}
+#modal38 #headertext{
+  margin-left: 10px;
+  margin-top: 40px !important;
+}
+#modal39 #headertext{
+  margin-left: 20px;
+  margin-top: 59px !important;
+}
+#modal40 #headertext{
+  margin-left: 20px;
+  margin-top: 59px !important;
+}
+#modal41 #headertext{
+  margin-left: 20px;
+  margin-top: 40px !important;
+}
+#modal42 #headertext{
+  margin-left: 20px;
+  margin-top: 59px !important;
+}
+#modal51 #headertext{
+  margin-left: 20px;
+  margin-top: 59px !important;
+}
+#modal54 #headertext{
+  margin-left: 20px;
+  margin-top: 42px !important;
+}
+#modal55 #headertext{
+  margin-left: 20px;
+  margin-top: 42px !important;
+}
+
+</style>
+
+<dom-module id="importantContacts-view">
+  <template>
+    <h3 class="heading">Important Contacts</h3>
+    <px-modal id="modal36" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Facility Helpdesk">
+      <px-card id="card36" class="modal-trigger" header-text="Facility Helpdesk" style="width:200px;height:110px;background-color:#ffffff;"></px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>POC : Praveen Kumar
+        <br>Contact Number : 9886680441
+        <br>Email ID : <a href="mailto:mpraveen.kumar@ge.com" target="_blank">mpraveen.kumar@ge.com</a>
+      </p>
+      <p>To facilities for any facilities related request / issue : <a href="mailto:PSN.Facilities@ge.com" target="_blank">PSN.Facilities@ge.com</a></p>
+    </px-modal>
+    <px-modal id="modal37" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Transportation">
+      <px-card id="card37" class = "modal-trigger" header-text="Transportation" style="width:200px;height:110px;background-color:#ffffff;"></px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>POC : Srinath B V
+        <br>Contact Number : 9880304318
+        <br>Email ID : <a href="mailto:srinath.bv@ge.com" target="_blank">srinath.bv@ge.com</a>
+      </p>
+      <p>For any Transport request / issues/help  : <a href="mailto:Transport.PSN@ge.com" target="_blank">Transport.PSN@ge.com</a></p>
+    </px-modal>
+    <px-modal id="modal38" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Admin Contact">
+      <px-card id="card38" class = "modal-trigger" header-text="Admin Contact" style="width:200px;height:110px;background-color:#ffffff;"></px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p><b>Praveen Kumar</b>
+
+<br>Mob: +91-9886680441
+<br>Landline: +91-80-61907512/61906063
+<br>Email Id: <a href ="mailto:Mpraveen.Kumar@ge.com" target="_blank">Mpraveen.Kumar@ge.com</a>
+<br>Helpdesk: 3300/1800 120 8858
+<br>Admin Room: +91-80-61906063
+<br><a href="https://ge.thepsc.com/login.aspx" target="_blank">https://ge.thepsc.com/login.aspx</a>
+      </p>
+    </px-modal>
+    <px-modal id="modal39" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="GE Volunteers group">
+      <px-card id="card39" class = "modal-trigger" header-text="GE Volunteers group" style="width:200px;height:110px;background-color:#ffffff;"></px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p> Please reach out to  <a href = "mailto:rmznxt.gevolunteers@ge.com" target = "_blank">rmznxt.gevolunteers@ge.com</a> for GE Volunteers group
+      </p>
+    </px-modal>
+    <px-modal id="modal40" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="EHS or Medical Emergency">
+      <px-card id="card40" class = "modal-trigger" header-text="EHS or Medical Emergency" style="width:200px;height:110px;background-color:#ffffff;"></px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>POC : Bhuvaneswaran
+        <br>Contact Number : 9538216897
+        <br>Email ID : <a href = "mailto:bhuvaneswaran.subramanian@ge.com" target = "_blank">bhuvaneswaran.subramanian@ge.com</a>
+      </p>
+      <p>To connect with the medical implant : <a href = "mailto:Medicalservice.psn@ge.com" target = "_blank">Medicalservice.psn@ge.com</a></p>
+    </px-modal>
+    <px-modal id="modal41" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Floor Leaders">
+      <px-card id="card41" class = "modal-trigger" header-text="Floor Leaders" style="width:200px;height:110px;background-color:#ffffff;"></px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>For any Major Escalations, please reach out to your respective Floor leaders listed below:
+        <br>1st Floor  : Kalpesh Maheshwari, Vinod Sharma
+        <br>3rd Floor  : Venu Gogineni, Ashutosh Itkelwar
+        <br>4th Floor  : Swaminathan TV, Nilesh Khairnar
+        <br>5th Floor  : Pradeep Menon, Vijay Balakrishnan
+        <br>6th Floor  : Karunakaran Azhisur, Asha Poulose
+      </p>
+    </px-modal>
+
+    <px-modal id="modal42" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="ERT floor leaders">
+      <px-card id="card42" class = "modal-trigger" header-text="ERT floor leaders" style="width:200px;height:110px;background-color:#ffffff;"></px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p> Preetham & Vijay are ERT 5th floor leaders.They can be reached @ <a href ="mailto:Preetham.Shankar@ge.com" target="_blank">Preetham.Shankar@ge.com,</a> <a href ="mailto:Vijay.Balakrishnan@ge.com" target="_blank">Vijay.Balakrishnan@ge.com</a>
+      </p>
+    </px-modal>
+
+    <px-modal id="modal51" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Womens Network">
+      <px-card id="card51" class = "modal-trigger" header-text="Womens Network" style="width:200px;height:110px;background-color:#ffffff;"></px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p><b>GE Womens Network Affinity Group</b>
+
+<br><br>Being an equal opportunity employer, GE encourages the diversity talent in the company to group and work on their career growth by investing themselves into the various initiatives that run by leadership teams at the different regional hub levels.
+
+<br><br>All women employees by default, upon joining GE, are a part of the Womens Network, and are added into the Country and global level DL's.
+
+<br><br>However, If you are interested to participate as a volunteer at your local chapter of Womens Network or be part of the variety of events happening across hubs and sites at the local level, you will have to join the following collaboration groups.
+
+<br><br>For events happening at the PSN site, join the <a href ="http://colab.ge.com/dashboard/canvas/v/507687c5653df4b573000ce1/home" target="_blank">PSN COLAB</a>
+
+<br>For events happening at the Bangalore Hub level, join the hub <a href ="http://colab.ge.com/dashboard/canvas/v/161572807/home" target="_blank">Colab</a>
+
+<br><br>Get added to the DL:  @GE Bangalore - Women's Network womensnetworkbangalore@ge.com
+by reaching out to any of the list owners: <br>Gnaneshwar, Shilpa (GE Aviation) SSO : 307009558 <br> Gera, Jyoti (GE Healthcare) SSO : 305009861 <br> Ghosh, Paromita (GE Lighting) SSO : 320007595 <br> Alexander, Anita (GE Transportation) SSO : 307005306
+<br><br><b>Please note: Men too are welcome to join Womens Network. “Together we grow!”</b>
+      </p>
+    </px-modal>
+
+
+    <px-modal id="modal54" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="IT Helpdesk">
+      <px-card id="card54" class = "modal-trigger" header-text="IT Helpdesk" style="width:200px;height:110px;background-color:#ffffff;"></px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      The helpdesk contains a large selection of self-help articles that will assist you in resolving most issues you experience. You also have the options to submit a web ticket, chat with an agent, or call, in case you were unable to resolve the issue through the self-help options.
+
+<br><br>Please <a href = "https://ge.service-now.com/Helpdesk" target = "_blank"> Click Here</a> or dial 5000 from your deskphone.
+      <p>
+      </p>
+    </px-modal>
+
+
+    <px-modal id="modal55" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Ramco Helpdesk">
+      <px-card id="card55" class = "modal-trigger" header-text="Ramco Helpdesk" style="width:200px;height:110px;background-color:#ffffff;"></px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>
+        <br><br><b>First Level Contact:</b>    payrollhelpdesk@ramco.com
+
+<br><br><b>Toll-free numbers:</b> &nbsp;   1800-425-5557
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MON to FRI : 10AM to 7PM IST
+
+<br><br><b>Toll Number:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;044 22354629
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MON to FRI : 10AM to 7PM IST
+
+<br><br><b>Retrails E-Mail ID :</b> &nbsp;&nbsp;     GEretiralsquery@ramco.com
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;080 2212 0973 / 0974
+
+<br><br><b>Escalation Level 1</b> &nbsp;&nbsp;     044 6653 4035 or 044 2220 4035
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MON to FRI : 10AM to 7PM IST
+
+<br><br><b>Escalation Level 2  (GE-Global Operation)</b>
+<br><b>Nagendra Sathyanarayan</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nagendra.Sathyanarayan@ge.com
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;080 4048 2499
+<br><b>Selvaganesh Thangavel</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Selvaganesh.thangavel1@ge.com
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;044 66536077
+
+      </p>
+    </px-modal>
+
+
+  </template>
+  <script>
+
+    Polymer({
+      is: 'importantContacts-view',
+      properties: {
+        status: {
+          type:String,
+          value : "#ffffff"
+        }
+      },
+
+      setValue: function() {
+       this.status = "true";
+     },
+
+      ready: function() {
+      },
+
+      attached: function (){
+          document.getElementById("modal36").addEventListener('btnModalPositiveClicked', function() {
+          this.status = "#99d03e";
+          document.getElementById("card36").style.background = this.status;
+          //alert("Hello positive--modal6 "+this.status);
+          });
+
+          document.getElementById("modal36").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card36").style.background = this.status;
+          //alert("Hello Negative--modal6");
+          });
+
+          document.getElementById("modal37").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card37").style.background = this.status;
+          });
+
+          document.getElementById("modal37").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card37").style.background = this.status;
+          });
+
+          document.getElementById("modal38").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card38").style.background = this.status;
+          });
+
+          document.getElementById("modal38").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card38").style.background = this.status;
+          });
+
+          document.getElementById("modal39").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card39").style.background = this.status;
+          });
+
+          document.getElementById("modal39").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card39").style.background = this.status;
+          });
+
+          document.getElementById("modal40").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card40").style.background = this.status;
+          });
+
+          document.getElementById("modal40").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card40").style.background = this.status;
+          });
+
+          document.getElementById("modal41").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card41").style.background = this.status;
+          });
+
+          document.getElementById("modal41").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card41").style.background = this.status;
+          });
+
+          document.getElementById("modal42").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card42").style.background = this.status;
+          });
+
+          document.getElementById("modal42").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card42").style.background = this.status;
+          });
+
+          document.getElementById("modal51").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card51").style.background = this.status;
+          });
+
+          document.getElementById("modal51").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card51").style.background = this.status;
+          });
+
+          document.getElementById("modal54").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card54").style.background = this.status;
+          });
+
+          document.getElementById("modal54").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card54").style.background = this.status;
+          });
+
+          document.getElementById("modal55").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card55").style.background = this.status;
+          });
+
+          document.getElementById("modal55").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card55").style.background = this.status;
+          });
+      }
+  });
+  </script>
+</dom-module>

@@ -1,0 +1,198 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/px-sample-cards/blank-card.html">
+<link rel="import" href="../../bower_components/px-view-header/px-view-header.html">
+<link rel="import" href="../../bower_components/px-modal/px-modal.html"/>
+<link rel="import" href="../../bower_components/webcomponentsjs/webcomponents-lite.min.js"/>
+<link rel="import" href="../../bower_components/px-theme/px-theme-styles.html">
+<style include="px-theme-styles" is="custom-style"></style>
+
+<style media="screen">
+.heading{
+  padding-left: 30px;
+}
+#headericon{
+  width: 0px;
+}
+#modal17{
+  padding-left: 30px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+#modal18,#modal19,#modal52 {
+  padding-right:5px;
+  padding-top: 5px;
+}
+.modal-trigger{
+  border: 1px solid #2886af;
+  border-radius: 5px;
+}
+.modal-trigger:hover{
+  cursor: pointer;
+  border: 3px solid #2886af;
+}
+.status_option{
+  color:#ffffff;
+  background-color: #fb2f28;
+}
+#modal17 header,#modal18 header,#modal19 header,#modal52 header {
+  border-bottom: 0 !important;
+}
+#modal17 #headertext{
+  margin-left: 10px;
+  margin-top: 12px !important;
+}
+#modal18 #headertext{
+  margin-left: 22px;
+  margin-top: 12px !important;
+}
+#modal19 #headertext{
+  margin-left: 7px;
+  margin-top: 12px !important;
+}
+#modal52 #headertext{
+  margin-left: 7px;
+  margin-top: 12px !important;
+}
+
+</style>
+
+<dom-module id="travel-view">
+  <template>
+
+    <h3 class="heading">Travel</h3>
+    <px-modal id = "modal17" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Travel Corporate Card">
+      <px-card id = "card17" class = "modal-trigger" header-text="Travel Corporate Card" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Step 1: Please click on the following link to raise request for the Corporate Card: <a href = "https://travel.ge.com/NASApp/travelmain/site/content/load/index.html" target="_blank"> Click Here</a>
+        <br>Step 2: Login through your SSO credentials.
+        <br>Step 3: Click on "Apply for a T&L Card/Access" link present on the left column under the section "Quick Links".
+        <br>Step 4: Please fill in your personal and bank details. The application will be sent for approval
+        <br>Step 5: Take a screenshot of the approval, xerox of a residential proof and submit it to:
+        <br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Umashankar Siddalingaiah</b>
+        <br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         Ph: 9844054186</b>
+        <br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Email: siddalingaiah.umashankar@ge.com</b>
+          <br>Step 6: After approval, please go to the above mentioned link and click on "Reservations Profile".
+          <br>Step 7: Please fill your personal and card details.
+      </p>
+    </px-modal>
+    <px-modal id = "modal18" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Travel Report">
+      <px-card id = "card18" class = "modal-trigger" header-text="Travel Report" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Step 1: Please click on the following link to raise request for the Corporate Card:<a href = "https://travel.ge.com/NASApp/travelmain/site/content/load/index.html" target="_blank"> Click Here</a>
+        <br>Step 2: Login through your SSO credentials.
+        <br>Step 3: Click on "Global T&L / Concur" link present on the left column under the section "Quick Links".
+        <br>Step 4: In case of card expenses: Click on "Available expenses".
+        <br>Step 5: Select all the expenses(checkbox) and click on "Create report".
+        <br>Step 6: Mention all the details.
+      </p>
+    </px-modal>
+    <px-modal id = "modal19" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading=" Travel Insurance">
+      <px-card id = "card19" class = "modal-trigger" header-text=" Travel Insurance" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Make sure you are covered … Correct business travel certificates are a must!
+        <br><br>To meet your needs and to ensure the accuracy of your business travel insurance certificates, please utilize the resources available to you through the <a href = "https://getravelutil.com/NASApp/tasapp/jsp/TravelerProfile.jsp" target="_blank">GE TAS System</a>
+        <br><br>Step 1:  Use the Profile link to ensure your passport details are complete and up-to-date.
+        <br>Step 2:  Use the Insurance Certificates, New Insurance for Visa link to request a business travel insurance certificate to secure a Visa when your travel has not yet been booked.
+        <br>Step 3:  Use the Insurance Certificates, Existing Insurance link to modify or cancel an existing business travel insurance certificate.
+        <br><br>1. During an emergency(medical or travel), please reach our travel assistance partner(Healix International) on these <a href = "https://traveloracle.healix.com/media/3351697/ge-healix-ghs-travel-card-gc-final-size.pdf" target="_blank">phone numbers.</a>
+        <br>2. For any travel insurance certificate queries, please reach out to Bajaj Allianz for assistance.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Pratima Bangare, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pratima.Bangare@bajajallianz.co.in &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone no: +91 84520 40489
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Himanshu Sharma, &nbsp;&nbsp;&nbsp; Himanshu.sharma01@bajajallianz.co.in &nbsp;&nbsp;&nbsp;Phone no: +91 7738119503
+
+      </p>
+    </px-modal>
+
+    <px-modal id = "modal52" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Book Travel Tickets">
+      <px-card id = "card52" class = "modal-trigger" header-text="Book Travel Tickets" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>To book travel tickets please visit <a href = "https://travel.ge.com" target="_blank">https://travel.ge.com</a> and and click <a href ="https://search.getthere.net/home" target="_blank">GETRes</a> under Quick Links.
+<br><br>For more information please visit <a href = "https://gtu.getthere.com/tutorials/index.php" target="_blank">https://gtu.getthere.com/tutorials/index.php</a>
+      </p>
+    </px-modal>
+
+
+
+  </template>
+  <script>
+
+    Polymer({
+      is: 'travel-view',
+      properties: {
+        status: {
+          type:String,
+          value : "#ffffff"
+        }
+      },
+
+      setValue: function() {
+       this.status = "true";
+     },
+
+      ready: function() {
+        //console.log('subCategorySample-view ready()');
+      },
+
+      attached: function (){
+          document.getElementById("modal17").addEventListener('btnModalPositiveClicked', function() {
+          this.status = "#99d03e";
+          document.getElementById("card17").style.background = this.status;
+          //alert("Hello positive--modal6 "+this.status);
+          });
+
+          document.getElementById("modal17").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card17").style.background = this.status;
+          //alert("Hello Negative--modal6");
+          });
+
+          document.getElementById("modal18").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card18").style.background = this.status;
+          });
+
+          document.getElementById("modal18").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card18").style.background = this.status;
+          });
+
+          document.getElementById("modal19").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card19").style.background = this.status;
+          });
+
+          document.getElementById("modal19").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card19").style.background = this.status;
+          });
+
+          document.getElementById("modal52").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card52").style.background = this.status;
+          });
+
+          document.getElementById("modal52").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card52").style.background = this.status;
+          });
+
+
+      }
+  });
+  </script>
+</dom-module>

@@ -1,0 +1,225 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/px-sample-cards/blank-card.html">
+<link rel="import" href="../../bower_components/px-view-header/px-view-header.html">
+<link rel="import" href="../../bower_components/px-modal/px-modal.html"/>
+<link rel="import" href="../../bower_components/webcomponentsjs/webcomponents-lite.min.js"/>
+<link rel="import" href="../../bower_components/px-theme/px-theme-styles.html">
+<style include="px-theme-styles" is="custom-style"></style>
+
+<style media="screen">
+.heading{
+  padding-left: 30px;
+}
+#headericon{
+  width: 0px;
+}
+#modal12{
+  padding-left: 30px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+#modal13,#modal14,#modal15,#modal16 {
+  padding-right:5px;
+  padding-top: 5px;
+}
+.modal-trigger{
+  border: 1px solid #2886af;
+  border-radius: 5px;
+}
+.modal-trigger:hover{
+  cursor: pointer;
+  border: 3px solid #2886af;
+}
+.status_option{
+  color:#ffffff;
+  background-color: #fb2f28;
+}
+#modal12 header,#modal13 header,#modal14 header,#modal15 header,#modal16 header {
+  border-bottom: 0 !important;
+}
+#modal12 #headertext{
+  margin-left: 25px;
+  margin-top: 12px !important;
+}
+#modal13 #headertext{
+  margin-left: 20px;
+  margin-top: 12px !important;
+}
+#modal14 #headertext{
+  margin-left: 12px;
+  margin-top: 12px !important;
+}
+#modal15 #headertext{
+  margin-left: 20px;
+  margin-top: 12px !important;
+}
+#modal16 #headertext{
+  margin-left: 35px;
+  margin-top: 12px !important;
+}
+</style>
+
+<dom-module id="facilitiesCategory-view">
+  <template>
+
+    <h3 class="heading">Facilities</h3>
+    <px-modal id = "modal12" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Printer Setup">
+      <px-card id = "card12" class = "modal-trigger" header-text="Printer Setup" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Follow instructions provided in the printer config file:<a href ="https://ge.app.box.com/files/0/f/8691926317/New_to_GE" target="_blank"> Get Config File</a> , Download Printer config.zip
+      </p>
+    </px-modal>
+    <px-modal id = "modal13" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Health & Safety">
+      <px-card id = "card13" class = "modal-trigger" header-text="Health & Safety" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>
+        <b>Employee, Health & Safety:</b>
+      </p>
+      <p>1. Signboards and Floor Plan of Fire Exits for any Emergency will be displayed on each floor.
+        <br>2. The Safe Assembly Area is on the Right hand site of Tower C. The map will be placed in the <a href ="https://ge.app.box.com/files/0/f/11849504610/GE_Digital_Hub_Movement" target="_blank">Box folder.</a>
+      </p>
+      <p>
+        <b>Medical Facility at PSN:</b>
+      </p>
+      <p>1. Medical emergency room:  Tower C, Ground floor.
+        <br>2. Operational hours: Between 10:00 AM and 6:00 PM (weekdays).
+        <br>3. Email address: <a href ="mailto:Medicalservice.psn@ge.com" target="_blank">Medicalservice.psn@ge.com</a>
+      </p>
+
+    </px-modal>
+    <px-modal id = "modal14" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Office Stationery">
+      <px-card id = "card14" class = "modal-trigger" header-text="Office Stationery" style="width:200px;height:110px;background-color:#ffffff;">
+        <p style="text-align:center;">O P T I O N A L</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Drop a mail for to mentioned email id : <a href ="mailto:psn.stationery@ge.com" target="_blank">psn.stationery@ge.com</a>
+      </p>
+    </px-modal>
+    <px-modal id = "modal15" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Food Card/Cafeteria">
+      <px-card id = "card15" class = "modal-trigger" header-text="Food Card/Cafeteria" style="width:200px;height:110px;background-color:#ffffff;">
+        <p style="text-align:center;">O P T I O N A L</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Prepaid food card will be issued to all new joiners on day 1 during induction.
+        <br><br><b>How do I recharge ?</b>
+        <br><br>1. You can recharge your card by <a href = "https://edge.hungerbox.com" target="_blank"> Clicking Here</a> OR download 'Hungerbox GE Cafe' App on your mobile.
+        <br>2. Use your SSO ID as username and the last 6 digits of your food card as password.
+        <br>3. You can also recharge your food card by cash at the counter.
+        <br><br><b>Cafeteria timings:</b>
+        <br><br>1. The Cafeteria timings will be from 8:00 AM to 9:00 PM(IST) with various options in both Veg and Non-Veg.
+        <br>2. Lunch timings will be between 12.30 PM & 3.30 PM IST.
+        <br>3. Cookies and Beverages(Tea/Coffee/Milk) are available in the pantry of each floor.
+        <br><br><b>Note: </b>For availing the services of common Food court in PSN, there is a different food card that needs to be used which you will need to collect from the food court counter in the PSN Cafeteria.
+
+      </p>
+    </px-modal>
+    <px-modal id = "modal16" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Transport">
+      <px-card id = "card16" class = "modal-trigger" header-text="Transport" style="width:200px;height:110px;background-color:#ffffff;">
+        <p  style="text-align:center;">O P T I O N A L</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>
+        <b>Parking & Bus Pass:</b>
+      </p>
+      <p>Please drop a mail to <a href ="mailto:srinath.bv@ge.com" target="_blank">mailto:srinath.bv@ge.com</a> and copy transport.psn@ge.com or For any Facility requests, please <a href ="https://ge.thepsc.com/login.aspx" target = "_blank">visit</a> here.
+      </p>
+      <p>
+        <b>Site Map:</b>
+      </p>
+      <p>The PSN Facility Site Map is available in the <a href ="https://ge.app.box.com/files/0/f/11849504610/GE_Digital_Hub_Movement" target="_blank">box folder</a>, please refer it for clarity on the office location. For late night cab requests or any other transport related support, please write to Transport Desk - <a href ="mailto:Transport.PSN@ge.com"> Transport.PSN@ge.com</a>
+      </p>
+    </px-modal>
+
+
+
+
+  </template>
+  <script>
+
+    Polymer({
+      is: 'facilitiesCategory-view',
+      properties: {
+        status: {
+          type:String,
+          value : "#ffffff"
+        }
+      },
+
+      setValue: function() {
+       this.status = "true";
+     },
+
+      ready: function() {
+      },
+
+      attached: function (){
+          document.getElementById("modal12").addEventListener('btnModalPositiveClicked', function() {
+          this.status = "#99d03e";
+          document.getElementById("card12").style.background = this.status;
+          //alert("Hello positive--modal12 "+this.status);
+          });
+
+          document.getElementById("modal12").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card12").style.background = this.status;
+          //alert("Hello Negative--modal12");
+          });
+
+          document.getElementById("modal13").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card13").style.background = this.status;
+          });
+
+          document.getElementById("modal13").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card13").style.background = this.status;
+          });
+
+          document.getElementById("modal14").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card14").style.background = this.status;
+          });
+
+          document.getElementById("modal14").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card14").style.background = this.status;
+          });
+
+          document.getElementById("modal15").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card15").style.background = this.status;
+          });
+
+          document.getElementById("modal15").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card15").style.background = this.status;
+          });
+
+          document.getElementById("modal16").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card16").style.background = this.status;
+          });
+
+          document.getElementById("modal16").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card16").style.background = this.status;
+          });
+
+      }
+  });
+  </script>
+</dom-module>

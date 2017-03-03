@@ -1,0 +1,192 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/px-sample-cards/blank-card.html">
+<link rel="import" href="../../bower_components/px-view-header/px-view-header.html">
+<link rel="import" href="../../bower_components/px-modal/px-modal.html"/>
+<link rel="import" href="../../bower_components/webcomponentsjs/webcomponents-lite.min.js"/>
+<link rel="import" href="../../bower_components/px-theme/px-theme-styles.html">
+<style include="px-theme-styles" is="custom-style"></style>
+
+<style media="screen">
+.heading{
+  padding-left: 30px;
+}
+#headericon{
+  width: 0px;
+}
+#modal7{
+  padding-left: 30px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+#modal8,#modal9,#modal11 {
+  padding-right:5px;
+  padding-top: 5px;
+}
+.modal-trigger{
+  border: 1px solid #2886af;
+  border-radius: 5px;
+}
+.modal-trigger:hover{
+  cursor: pointer;
+  border: 3px solid #2886af;
+}
+.status_option{
+  color:#ffffff;
+  background-color: #fb2f28;
+}
+#modal7 header,#modal8 header,#modal9 header,#modal11 header {
+  border-bottom: 0 !important;
+}
+#modal7 #headertext{
+  margin-left: 20px;
+  margin-top: 12px !important;
+}
+#modal8 #headertext{
+  margin-left: 20px;
+  margin-top: 12px !important;
+}
+#modal9 #headertext{
+  margin-left: 25px;
+  margin-top: 12px !important;
+}
+#modal11 #headertext{
+  margin-left: 10px;
+  margin-top: 12px !important;
+}
+
+</style>
+
+<dom-module id="otherRequestCategory-view">
+  <template>
+
+    <h3 class="heading">Other Requests</h3>
+    <px-modal id = "modal7" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="WebEx account">
+      <px-card id = "card7" class = "modal-trigger" header-text="WebEx account" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Step 1: Visit
+        <a href = "http://www.ge.com/emeetings" target="_blank"> http://www.ge.com/emeetings</a>
+        <br>Step 2: Set the Audio Preferences before you host any meeting (one time settings)
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For CallMe Options, Goto SetUp -> Preferences -> Audio Set Up. Enter your preferred callback number.
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To setup a Teleconference account, Goto Setup - > Preferences-> Audio Set Up -> Add account.
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter the reservation less conferencing dial number and leader PIN.
+
+        <br>Step 3: To schedule a meeting, click "Schedule a meeting" on the left navigation panel.
+        <br>Step 4: To join any webex meeting, click the meeting invitation link provided by the meeting organizer.
+      </p>
+    </px-modal>
+
+    <px-modal id = "modal8" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="ADN & BUC code">
+      <px-card id = "card8" class = "modal-trigger" header-text="ADN & BUC code" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Get ADN&BUC code from HR or manager. Use this code to register for paid internal and external
+        <br>training sessions. Approval from managers is required before using ADN&BUC
+      </p>
+    </px-modal>
+
+    <px-modal id = "modal9" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Meeting Room Request">
+      <px-card id = "card9" class = "modal-trigger" header-text="Meeting Room Request" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Please visit <a href = "https://ge.condecosoftware.com" target = "_blank">https://ge.condecosoftware.com</a> and follow the below guieliens for meeting room bookings.
+        <br><br>For more information about Condeco <a href ="https://ge.condecosoftware.com/manual/Condeco25UserManual.pdf" target="_blank">Click Here</a>
+
+<br><br><br><b>Note:</b> Meeting rooms booked via Condeco will not reflect in your Outlook calendar and vice-versa. Kindly make your bookings both in Condeco & Outlook.
+      </p>
+    </px-modal>
+
+    <px-modal id = "modal11" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Cubicle Request">
+      <px-card id = "card11" class = "modal-trigger" header-text="Cubicle Request" style="width:200px;height:110px;background-color:#ffffff;">
+        <p style="text-align:center;">O P T I O N A L</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>1) To raise a request for a cubicle, please drop a mail to <a href = "mailto:dhanya.kaimal@ge.com" target="_blank"> Kaimal, Dhanya</a>
+        <br>2) To collect your ID card, please contact:
+        <br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Srikanth HS</b>
+          <br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         Phone - 9902403558</b>
+          <br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       Email - Srikanth.hs@ge.com</b>
+
+      </p>
+    </px-modal>
+
+
+  </template>
+  <script>
+
+    Polymer({
+      is: 'otherRequestCategory-view',
+      properties: {
+        status: {
+          type:String,
+          value : "#ffffff"
+        }
+      },
+
+      setValue: function() {
+       this.status = "true";
+     },
+
+      ready: function() {
+        //console.log('subCategorySample-view ready()');
+      },
+
+      attached: function (){
+          document.getElementById("modal7").addEventListener('btnModalPositiveClicked', function() {
+          this.status = "#99d03e";
+          document.getElementById("card7").style.background = this.status;
+          //alert("Hello positive--modal6 "+this.status);
+          });
+
+          document.getElementById("modal7").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card7").style.background = this.status;
+          //alert("Hello Negative--modal6");
+          });
+
+          document.getElementById("modal8").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card8").style.background = this.status;
+          });
+
+          document.getElementById("modal8").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card8").style.background = this.status;
+          });
+
+          document.getElementById("modal9").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card9").style.background = this.status;
+          });
+
+          document.getElementById("modal9").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card9").style.background = this.status;
+          });
+
+          document.getElementById("modal11").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card11").style.background = this.status;
+          });
+
+          document.getElementById("modal11").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card11").style.background = this.status;
+          });
+
+
+      }
+  });
+  </script>
+</dom-module>

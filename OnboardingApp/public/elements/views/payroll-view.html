@@ -1,0 +1,335 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/px-sample-cards/blank-card.html">
+<link rel="import" href="../../bower_components/px-view-header/px-view-header.html">
+<link rel="import" href="../../bower_components/px-modal/px-modal.html"/>
+<link rel="import" href="../../bower_components/webcomponentsjs/webcomponents-lite.min.js"/>
+<link rel="import" href="../../bower_components/px-theme/px-theme-styles.html">
+<style include="px-theme-styles" is="custom-style"></style>
+
+<style media="screen">
+.heading{
+  padding-left: 30px;
+}
+#headericon{
+  width: 0px;
+}
+#modal20,#modal25,#modal26,#modal27,#modal44{
+  padding-left: 30px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+#modal21,#modal22,#modal23,#modal24 {
+  padding-right:5px;
+  padding-top: 5px;
+}
+.modal-trigger{
+  border: 1px solid #2886af;
+  border-radius: 5px;
+}
+.modal-trigger:hover{
+  cursor: pointer;
+  border: 3px solid #2886af;
+}
+.status_option{
+  color:#ffffff;
+  background-color: #fb2f28;
+}
+#modal20 header,#modal21 header,#modal22 header,#modal23 header,#modal24 header,#modal25 header,#modal26 header,#modal27 header,#modal44 header{
+  border-bottom: 0 !important;
+}
+#modal20 #headertext{
+  margin-left: 13px;
+  margin-top: 10px !important;
+}
+#modal21 #headertext{
+  margin-left: 25px;
+  margin-top: 12px !important;
+}
+#modal22 #headertext{
+  margin-left: 27px;
+  margin-top: 10px !important;
+}
+#modal23 #headertext{
+  margin-left: 0px;
+  margin-top: 12px !important;
+}
+#modal24 #headertext{
+  margin-left: 30px;
+  margin-top: 10px !important;
+}
+#modal25 #headertext{
+  margin-left: 5px;
+  margin-top: 12px !important;
+}
+#modal26 #headertext{
+  margin-left: 20px;
+  margin-top: 12px !important;
+}
+#modal27 #headertext{
+  margin-left: 12px;
+  margin-top: 12px !important;
+}
+
+#modal44 #headertext{
+  margin-left: 12px;
+  margin-top: 12px !important;
+}
+
+</style>
+
+<dom-module id="payroll-view">
+  <template>
+
+    <h3 class="heading">Pay & Taxes</h3>
+    <px-modal id="modal20" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Update Contact, Dependent, Personal and Other Details">
+      <px-card id="card20" class="modal-trigger" header-text="Employee Details" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Step 1: Please click <a href ="https://onehr.ge.com" target="_blank">here</a> to update Employee Details.
+        <br>Step 2: Please click on "Pay & Taxes" and then click on "Ramco Payroll Home".
+        <br>Step 3: Under "Business Processes" select "Self Service" then select "Employee Details".
+        <br>Step 4: Update your Contact Details, Dependent Details, Personal Details and Other Details.
+        <br>Step5 : Please provide all the details and click on Save.
+      </p>
+    </px-modal>
+    <px-modal id="modal21" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Update your Bank Account Details">
+      <px-card id="card21" class = "modal-trigger" header-text="Bank Account Details" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Step 1: Please <a href ="https://onehr.ge.com" target="_blank">click here</a> to update Bank Account Details.
+        <br>Step 2: Please click on "Pay & Taxes" and then click on "Ramco Payroll Home".
+        <br>Step 3: Under "Business Processes" select "Self Service" then select "Employee Details".
+        <br>Step 4: Go to "Record Employee Other Details" and update "Employee Payment Details" i.e Bank Account Details.
+        <br>Step5 : Please provide all the details and click on Save.
+      </p>
+    </px-modal>
+    <px-modal id="modal22" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Flexible Component Declaration">
+      <px-card id="card22" class = "modal-trigger" header-text="Flexible Component Declaration" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Step 1: Please click <a href = "https://onehr.ge.com" target="_blank">here</a> to Record Flexible Components Declaration.
+        <br>Step 2: Please click on "Pay & Taxes" and then click on "Ramco Payroll Home".
+        <br>Step 3: Under "Business Processes" select "Payroll" then select "Record Flexible Components Declaration".
+        <br>Step 4: Please provide all the details and click on Submit.
+      </p>
+    </px-modal>
+    <px-modal id="modal23" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Update UAN number">
+      <px-card id="card23" class = "modal-trigger" header-text="Update UAN number" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Please click <a href ="https://onehr.ge.com" target="_blank">here</a> to update your UAN number.
+        <br>Step 2: Please click on "Pay & Taxes" and then click on "Ramco Payroll Home".
+        <br>Step 3: Under "Business Processes" select "Retirals" then select "Employee UAN Number".
+        <br>Step 4: Please provide all the details and click on Save.
+      </p>
+    </px-modal>
+    <px-modal id="modal24" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Investment Declaration">
+      <px-card id="card24" class = "modal-trigger" header-text="Investment Declaration" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Please click <a href ="https://onehr.ge.com" target="_blank">here</a> to Record Investment Declaration.
+        <br>Step 2: Please click on "Pay & Taxes" and then click on "Ramco Payroll Home".
+        <br>Step 3: Under "Business Processes" select "Tax Details" then select "Record Investment Declaration".
+        <br>Step4: Please select "Financial Year" and click on "Get Details".
+        <br>Step 5: Please record your Investment and click on Submit.
+      </p>
+    </px-modal>
+    <px-modal id="modal25" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Upload Tax Proofs">
+      <px-card id="card25" class = "modal-trigger" header-text="Upload Tax Proofs" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Please click <a href ="https://onehr.ge.com" target="_blank">here</a> to Upload the Tax Proofs.
+        <br>Step 2: Please click on "Pay & Taxes" and then click on "Ramco Payroll Home".
+        <br>Step 3: Under "Business Processes" select "Tax Details" then select "Upload Tax Proofs".
+        <br>Step4: Please select "Financial Year" and click on "Get Details".
+        <br>Step 5: Please upload your tax proof documents and click on Submit.
+      </p>
+    </px-modal>
+
+    <h3 class="heading">HR Ops Services</h3>
+    <px-modal id="modal26" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Update Profile">
+      <px-card id="card26" class = "modal-trigger" header-text="Update Profile" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Step 1: Please click <a href ="https://onehr.ge.com" target="_blank">here</a> to update your profile.
+        <br>Step 2: Login through your SSO credentials.
+        <br>Step 3: Click on "HR Ops Services" link present on the left column under the section "Quick Links".
+        <br>Step 4: Under "Data Change Requests" Please click on "View/Update My Profile".
+        <br>Step 5: Your education & experience details are important to GE. It is used at the time of annual performance assessment. This information also forms part of your internal resume which is used for opportunities available within GE subject to your application.<a href ="https://ems.ge.com/" target="_blank">Click here</a> to update
+        <br>Step 6: Loading your photo into this site is strictly voluntary. By loading your photograph/image into this site, you are authorizing its use throughout SupportCentral, including the HR Organization Directory, and internal HR and other internal business applications, e.g., WebEx, organization charts in internal business presentations. <a href ="http://supportcentral.ge.com/profile/photo_HR.asp?flag_confirm=1" target="_blank">Click here</a> to upload.
+      </p>
+    </px-modal>
+
+    <h3 class="heading">Enrollments</h3>
+    <px-modal id="modal27" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Update Insurance dependants">
+      <px-card id="card27" class = "modal-trigger" header-text="Update Insurance dependants" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Step 1: Please <a href ="https://onehr.ge.com" target="_blank">click here</a> to update your dependents.
+        <br>Step 2: Please click on "Enrollments" and then click on "Your Elections"
+        <br>Step 3: Update your dependents.
+      </p>
+    </px-modal>
+
+    <h3 class="heading">Leave Application Process</h3>
+    <px-modal id="modal44" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Leave Application">
+      <px-card id="card44" class = "modal-trigger" header-text="Leave Application" style="width:200px;height:110px;background-color:#ffffff;">
+        <p style="text-align:center;">O P T I O N A L</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Step 1: Please <a href ="https://onehr.ge.com" target="_blank">click here</a> to visit One HR portal.
+        <br>Step 2: Click on 'Ramco Payroll Home' link under 'Pay & Taxes' tab.
+        <br>Step 3: Under 'Business processes' -> 'Self Service' -> 'Leave Management', you can access the below details.
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Apply for leave
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Edit Leave Application
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* View leave transaction details
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* View leave summary
+      </p>
+    </px-modal>
+
+
+
+
+
+  </template>
+  <script>
+
+    Polymer({
+      is: 'payroll-view',
+      properties: {
+        status: {
+          type:String,
+          value : "#ffffff"
+        }
+      },
+
+      setValue: function() {
+       this.status = "true";
+     },
+
+      ready: function() {
+      },
+
+      attached: function (){
+          document.getElementById("modal20").addEventListener('btnModalPositiveClicked', function() {
+          this.status = "#99d03e";
+          document.getElementById("card20").style.background = this.status;
+          //alert("Hello positive--modal6 "+this.status);
+          });
+
+          document.getElementById("modal20").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card20").style.background = this.status;
+          //alert("Hello Negative--modal6");
+          });
+
+          document.getElementById("modal21").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card21").style.background = this.status;
+          });
+
+          document.getElementById("modal21").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card21").style.background = this.status;
+          });
+
+          document.getElementById("modal22").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card22").style.background = this.status;
+          });
+
+          document.getElementById("modal22").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card22").style.background = this.status;
+          });
+
+          document.getElementById("modal23").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card23").style.background = this.status;
+          });
+
+          document.getElementById("modal23").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card23").style.background = this.status;
+          });
+
+          document.getElementById("modal24").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card24").style.background = this.status;
+          });
+
+          document.getElementById("modal24").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card24").style.background = this.status;
+          });
+
+          document.getElementById("modal25").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card25").style.background = this.status;
+          });
+
+          document.getElementById("modal25").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card25").style.background = this.status;
+          });
+
+          document.getElementById("modal26").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card26").style.background = this.status;
+          });
+
+          document.getElementById("modal26").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card26").style.background = this.status;
+          });
+
+          document.getElementById("modal27").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card27").style.background = this.status;
+          });
+
+          document.getElementById("modal27").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card27").style.background = this.status;
+          });
+
+          document.getElementById("modal44").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card44").style.background = this.status;
+          });
+
+          document.getElementById("modal44").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card44").style.background = this.status;
+          });
+
+      }
+  });
+  </script>
+</dom-module>

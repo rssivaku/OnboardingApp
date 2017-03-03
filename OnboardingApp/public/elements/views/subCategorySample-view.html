@@ -1,0 +1,238 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/px-sample-cards/blank-card.html">
+<link rel="import" href="../../bower_components/px-view-header/px-view-header.html">
+<link rel="import" href="../../bower_components/px-modal/px-modal.html"/>
+<link rel="import" href="../../bower_components/webcomponentsjs/webcomponents-lite.min.js"/>
+<link rel="import" href="../../bower_components/px-theme/px-theme-styles.html">
+<style include="px-theme-styles" is="custom-style"></style>
+
+<style media="screen">
+.heading{
+  padding-left: 30px;
+}
+#headericon{
+  width: 0px;
+}
+#modal1,#modal3{
+  padding-left: 30px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+#modal2,#modal4,#modal5,#modal6 {
+  padding-right:5px;
+  padding-top: 5px;
+}
+.modal-trigger{
+  border: 1px solid #2886af;
+  border-radius: 5px;
+}
+.modal-trigger:hover{
+  cursor: pointer;
+  border: 3px solid #2886af;
+}
+.status_option{
+  color:#ffffff;
+  background-color: #fb2f28;
+}
+#modal1 header,#modal2 header,#modal3 header,#modal4 header,#modal5 header,#modal6 header{
+  border-bottom: 0 !important;
+}
+#modal1 #headertext{
+  margin-left: 30px;
+  margin-top: 12px !important;
+}
+#modal2 #headertext{
+  margin-left: 40px;
+  margin-top: 12px !important;
+}
+#modal3 #headertext{
+  margin-left: 60px;
+  margin-top: 12px !important;
+}
+#modal4 #headertext{
+  margin-left: 30px;
+  margin-top: 12px !important;
+}
+#modal5 #headertext{
+  margin-left: 15px;
+  margin-top: 12px !important;
+}
+#modal6 #headertext{
+  margin-left: 20px;
+  margin-top: 12px !important;
+}
+
+</style>
+
+<dom-module id="subCategorySample-view">
+  <template>
+
+    <h3 class="heading">HARDWARE</h3>
+    <px-modal id = "modal1" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Telephone connection and extension">
+      <px-card id = "card1" class = "modal-trigger" header-text="Telephone connection" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Step 1: Please click on the following link to raise request for the Telephone connection :
+        <a href = "http://supportcentral.ge.com/products/sup_products.asp?prod_id=324526" target="_blank">Click here</a>
+        <br>Step 2: Login through your SSO credentials.
+        <br>Step 3: Click on "IP Phone Extention Request"  under the section "Process Links".
+        <br>Step 4: Fill your details. Click on Submit.
+      </p>
+    </px-modal>
+    <px-modal id = "modal2" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="IT Assets">
+      <px-card id = "card2" class = "modal-trigger" header-text="IT Assets" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Step 1: Please click on the following link to raise request for the hardware assets:
+        <a href = "http://supportcentral.ge.com/products/sup_products.asp?prod_id=324526" target="_blank">Click here</a>
+        <br>Step 2: Login through your SSO credentials.
+        <br>Step 3: Click on "Raise an IT Request for Employee(SELF)" link present on the left column under the section"IT Asset Request".
+        <br>Step 4: Fill your details and select assets required, Click on Submit.
+      </p>
+    </px-modal>
+
+    <h3 class="heading">SOFTWARE</h3>
+    <px-modal id = "modal3" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="VPN">
+      <px-card id = "card3" class = "modal-trigger" header-text="VPN" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Create VPN Request: Please <a href = "http://supportcentral.ge.com/products/sup_products.asp?prod_id=324526" target = "_blank">Click Here </a>and click on "VPN Token Request" to raise a ticket.
+      </p>
+    </px-modal>
+    <px-modal id = "modal4" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Cisco Jabber">
+      <px-card id = "card4" class = "modal-trigger" header-text="Cisco Jabber" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>If it is not installed in your system then follow the below task in the given order :
+        <br>Step 1: Please <a href = "https://ge.service-now.com/mytech/" target="_blank">Click here</a> to raise request for any software.
+        <br>Step 2: Login through your SSO credentials.
+        <br>Step 3: Click on "Start new cart"
+        <br>Step 4: Click on "Request software" and search for the required software.
+      </p>
+    </px-modal>
+    <px-modal id = "modal5" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Cisco Proximity">
+      <px-card id = "card5" class = "modal-trigger" header-text="Cisco Proximity" style="width:200px;height:110px;background-color:#ffffff;">
+        <p class="status_option" style="text-align:center;">M A N D A T O R Y</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Please <a href = "https://proximity.cisco.com/" target="_blank">Click here </a>to download Cisco Proximity.
+      </p>
+    </px-modal>
+    <px-modal id = "modal6" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Inter Call Audio Bridge">
+      <px-card id = "card6" class = "modal-trigger" header-text="Intercall audio bridge" style="width:200px;height:110px;background-color:#ffffff;">
+        <p style="text-align:center;">O P T I O N A L</p>
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Step 1: To raise a request for intercall audio bridge, please
+        <a href = "http://supportcentral.ge.com/products/sup_products.asp?prod_id=324526" target="_blank">Click here</a>
+        <br>Step 2: Login through your SSO credentials.
+        <br>Step 3: Click on "Raise an IT Request for Employee(SELF)" link present on the left column under the section"IT Asset Request".
+        <br>Step 4: Fill your details and select "Audiobridge" as an option under Asset selection column
+        <br>Step 5: Select type of bridge as "Intercall".
+        <br>Step 6: You will receive an email with conference code and leadder pin after sometime.
+      </p>
+    </px-modal>
+
+      <br><br>
+  </template>
+  <script>
+
+    Polymer({
+      is: 'subCategorySample-view',
+      properties: {
+        status: {
+          type:String,
+          value : "#ffffff"
+        }
+      },
+
+      setValue: function() {
+       this.status = "true";
+     },
+
+      ready: function() {
+        console.log('subCategorySample-view ready()');
+      },
+
+      attached: function (){
+          document.getElementById("modal1").addEventListener('btnModalPositiveClicked', function() {
+          this.status = "#99d03e";
+          document.getElementById("card1").style.background = this.status;
+          //alert("Hello positive--modal1 "+this.status);
+          });
+
+          document.getElementById("modal1").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card1").style.background = this.status;
+          //alert("Hello Negative--modal1");
+          });
+
+          document.getElementById("modal2").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card2").style.background = this.status;
+          });
+
+          document.getElementById("modal2").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card2").style.background = this.status;
+          });
+
+          document.getElementById("modal3").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card3").style.background = this.status;
+          });
+
+          document.getElementById("modal3").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card3").style.background = this.status;
+          });
+
+          document.getElementById("modal4").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card4").style.background = this.status;
+          });
+
+          document.getElementById("modal4").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card4").style.background = this.status;
+          });
+
+          document.getElementById("modal5").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card5").style.background = this.status;
+          });
+
+          document.getElementById("modal5").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card5").style.background = this.status;
+          });
+
+          document.getElementById("modal6").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card6").style.background = this.status;
+          });
+
+          document.getElementById("modal6").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card6").style.background = this.status;
+          });
+      }
+  });
+  </script>
+</dom-module>
