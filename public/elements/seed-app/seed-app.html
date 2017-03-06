@@ -1,0 +1,402 @@
+<!-- import polymer -->
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<!-- import page level css -->
+<link rel="import" href="seed-app-styles.html">
+
+<!-- app route -->
+<link rel="import" href="../../bower_components/app-route/app-location.html">
+<link rel="import" href="../../bower_components/app-route/app-route.html">
+
+<!-- px components -->
+<link rel="import" href="../../bower_components/px-app-nav/px-app-nav.html">
+<link rel="import" href="../../bower_components/px-view/px-view.html">
+<link rel="import" href="../../bower_components/px-modal/px-modal.html"/>
+
+<link rel="import" href="../ge-svg-logo/ge-svg-logo.html">
+<link rel="import" href="../predix-logo/predix-logo.html">
+<link rel="import" href="../seed-footer/seed-footer.html">
+
+
+<dom-module id="seed-app">
+  <template>
+
+    <!-- apply imported seed app style module -->
+    <style include="seed-app-styles">
+    </style>
+
+    <style>
+      a.selected .px-app-nav {
+        background-color: #414549 !important;
+      }
+    </style>
+
+    <header style = "background-color:#f0f1f2;" role="banner" class="flex flex--middle">
+      <div class="viewport flex">
+        <h3 class="flex__item app-title"><ge-svg-logo class="u-mr--"></ge-svg-logo>Onboarding Buddy</h3>
+        <div class="flex__item">
+          <div class="flex" style="text-align:right;">
+            <h3 class="flex__item weight--normal logo">Powered by <predix-logo style="display:inline-block; width: 82px;" class="flex__item"></predix-logo></h3>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="viewport">
+
+      <div class="content-wrapper">
+        <px-app-nav
+        style = "background-color: #797a7a;"
+          class="navbar"
+          nav-items="[[navItems]]"
+          path-prefix="[[pathPrefix]]">
+        </px-app-nav>
+
+        <main class="u-pt-- u-pr-- u-pl--" style = "background-color: white;"role="main">
+
+          <!-- app-location captures url and assigns _route value -->
+          <app-location
+            id="carbonLocation"
+            route="{{_route}}"
+            use-hash-as-path>
+          </app-location>
+
+          <!-- /dashboards route and view -->
+          <app-route
+            route="[[_route]]"
+            pattern="/dashboards"
+            active="{{_dashboardsActive}}">
+          </app-route>
+
+          <px-view
+            active="[[_dashboardsActive]]"
+            element-href="/elements/views/dashboards-view.html">
+          </px-view>
+
+          <!-- /blankpage route and view -->
+          <app-route
+            route="[[_route]]"
+            pattern="/blankpage"
+            active="{{_blankpageActive}}">
+          </app-route>
+
+          <px-view
+            active="[[_blankpageActive]]"
+            element-href="/elements/views/blankpage-view.html">
+          </px-view>
+
+          <app-route
+            route="[[_route]]"
+            pattern="/sample"
+            active="{{_sampleActive}}">
+          </app-route>
+          <px-view
+            active="[[_sampleActive]]"
+            element-href="/elements/views/sample-view.html">
+          </px-view>
+
+          <app-route
+            route="[[_route]]"
+            pattern="/subCategorySample"
+            active="{{_subCategorySampleActive}}">
+          </app-route>
+          <px-view
+            active="[[_subCategorySampleActive]]"
+            element-href="/elements/views/subCategorySample-view.html">
+          </px-view>
+
+          <app-route
+            route="[[_route]]"
+            pattern="/facilitiesCategory"
+            active="{{_facilitiesCategoryActive}}">
+          </app-route>
+          <px-view
+            active="[[_facilitiesCategoryActive]]"
+            element-href="/elements/views/facilitiesCategory-view.html">
+          </px-view>
+
+          <app-route
+            route="[[_route]]"
+            pattern="/thingKnowCategory"
+            active="{{_thingKnowActive}}">
+          </app-route>
+          <px-view
+            active="[[_thingKnowActive]]"
+            element-href="/elements/views/thingKnow-view.html">
+          </px-view>
+
+          <app-route
+            route="[[_route]]"
+            pattern="/travelCategory"
+            active="{{_travelCategoryActive}}">
+          </app-route>
+          <px-view
+            active="[[_travelCategoryActive]]"
+            element-href="/elements/views/travel-view.html">
+          </px-view>
+
+          <app-route
+            route="[[_route]]"
+            pattern="/importantContacts"
+            active="{{_importantContactsActive}}">
+          </app-route>
+          <px-view
+            active="[[_importantContactsActive]]"
+            element-href="/elements/views/importantContacts-view.html">
+          </px-view>
+
+
+          <app-route
+            route="[[_route]]"
+            pattern="/otherRequestCategory"
+            active="{{_otherRequestCategoryActive}}">
+          </app-route>
+          <px-view
+            active="[[_otherRequestCategoryActive]]"
+            element-href="/elements/views/otherRequestCategory-view.html">
+          </px-view>
+
+
+          <app-route
+            route="[[_route]]"
+            pattern="/payrollCategory"
+            active="{{_payrollCategoryActive}}">
+          </app-route>
+          <px-view
+            active="[[_payrollCategoryActive]]"
+            element-href="/elements/views/payroll-view.html">
+          </px-view>
+
+          <!-- /winddata route and view -->
+          <app-route
+            route="[[_route]]"
+            pattern="/winddata"
+            active="{{_winddataActive}}">
+          </app-route>
+          <px-view
+            active="[[_winddataActive]]"
+            element-href="/elements/views/winddata-view.html">
+          </px-view>
+
+        </main>
+
+      </div>
+    </div>
+
+    <seed-footer style = "background-color:#f0f1f2" footer-links='[[footerLinks]]'></seed-footer>
+
+  </template>
+  <script>
+    Polymer({
+      is: 'seed-app',
+
+      properties: {
+
+        routesActive: {
+          type: Boolean,
+          value: false
+        },
+
+        //Global application object
+        global: {
+          type: Object,
+          value: function() {
+            return {
+              version: '1.0',
+              name: 'Onboarding Buddy',
+              session: {}
+            }
+          }
+        },
+
+
+        navItems: {
+          type: Array,
+          value: function() {
+            return [{
+              "label": "Request",
+              "path": "/subCategorySample",
+              "subitems":[{"label":"Assets",
+              "path" : "/subCategorySample",
+              "href":null,
+              "class":"",
+              "subitemclass":"",
+              "subitemlistclass":"",
+              "selected":false},
+              {
+                "label":"Other Requests",
+                "href":null,
+                "path":"/otherRequestCategory",
+                "class":"",
+                "subitemclass":"",
+                "subitemlistclass":"",
+                "selected":false
+              }
+            ],
+              "icon": "fa-chevron-down"
+            },
+            {
+              "label": "Facilities",
+              "path": "/facilitiesCategory",
+              "class": "",
+              "icon": "fa-file"
+            },
+            {
+              "label": "Travel",
+              "path": "/travelCategory",
+              "icon": "fa-file"
+            },
+            {
+              "label": "Payroll and Policies",
+              "path": "/payrollCategory",
+              "icon": "fa-file"
+            },
+            {
+              "label": "Things you should know",
+              "path": "/thingKnowCategory",
+              "icon": "fa-file"
+            },
+            {
+              "label": "Important Contacts",
+              "path": "/importantContacts",
+              "icon": "fa-file"
+            },
+            // {
+            //   "label": "Address",
+            //   "path": "",
+            //   "icon": "fa-file"
+            // },
+            // {
+            //   "label": "Tools",
+            //   "path": "",
+            //   "icon": "fa-file"
+            // },
+            {
+              "label": "Business Knowledge",
+              "path": "/blankpage",
+              "subitems":[{"label":"GE Power",
+              "path" : "",
+              "href":null,
+              "class":"",
+              "subitemclass":"",
+              "subitemlistclass":"",
+              "selected":false},
+              {
+                "label":"GE Oil & Gas",
+                "href":null,
+                "path":"",
+                "class":"",
+                "subitemclass":"",
+                "subitemlistclass":"",
+                "selected":false
+              },
+              {
+                "label":"GE Aviation",
+                "href":null,
+                "path":"",
+                "class":"",
+                "subitemclass":"",
+                "subitemlistclass":"",
+                "selected":false
+              },
+              {
+                "label":"GE Renewables",
+                "href":null,
+                "path":"",
+                "class":"",
+                "subitemclass":"",
+                "subitemlistclass":"",
+                "selected":false
+              },
+              {
+                "label":"GE Healthcare",
+                "href":null,
+                "path":"",
+                "class":"",
+                "subitemclass":"",
+                "subitemlistclass":"",
+                "selected":false
+              },
+              {
+                "label":"GE Global Research",
+                "href":null,
+                "path":"",
+                "class":"",
+                "subitemclass":"",
+                "subitemlistclass":"",
+                "selected":false
+              },
+              {
+                "label":"GE Capital",
+                "href":null,
+                "path":"",
+                "class":"",
+                "subitemclass":"",
+                "subitemlistclass":"",
+                "selected":false
+              }
+            ],
+              "icon": "fa-chevron-down"
+            }
+            /*
+            //Uncomment this block to show the Wind Data navigation item on the menu.
+            ,{
+              "label": "Wind Data",
+              "path": "/winddata",
+              "icon": "fa-line-chart"
+            }
+            */
+            ]
+          }
+        },
+
+        footerLinks: {
+          type: Array,
+          value: function() {
+            return [{
+              "label": "Privacy",
+              "href": "http://www.ge.com/privacy",
+              "target": "_blank"
+            }, {
+              "label": "Terms",
+              "href": "http://www.ge.com/terms",
+              "target": "_blank"
+            }, {
+              "label": "Contact",
+              "href": "http://www.ge.com/contact/general",
+              "target": "_blank"
+            }, {
+              "label": "Accessibility",
+              "href": "http://www.ge.com/accessibility",
+              "target": "_blank"
+            }, {
+              "label": "Cookies",
+              "href": "http://www.ge.com/accessibility",
+              "target": "_blank"
+            }
+          ]
+          }
+        },
+
+        // Sets app default base URL for client-side routing
+        pathPrefix: {
+          type: String,
+          value: '#'
+        }
+      },
+
+      ready: function(){
+        this._checkForDefaultRoute();
+      },
+
+      _checkForDefaultRoute: function() {
+        // set default route to /dashboards
+        var l = window.location;
+        if((l.hash === "#/" || l.hash === "") && l.pathname === "/") {
+          l.hash = "/subCategorySample";
+        }
+      }
+
+    });
+  </script>
+</dom-module>

@@ -1,0 +1,20 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/px-sample-cards/blank-card.html">
+<link rel="import" href="../../bower_components/px-view-header/px-view-header.html">
+<dom-module id="blankpage-view">
+  <template>
+    <px-view-header title="Coming Soon!" style="display: block; margin-bottom: 6px;"></px-view-header>
+    <px-card id="myCard">
+      Page under Construction !!
+    </px-card>
+  </template>
+  <script>
+    Polymer({
+      is: 'blankpage-view',
+      properties: {},
+      ready: function() {
+        console.log('blankpage-view ready()')
+      }
+    });
+  </script>
+</dom-module>

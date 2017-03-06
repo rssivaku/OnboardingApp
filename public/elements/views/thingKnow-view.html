@@ -1,0 +1,461 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/px-sample-cards/blank-card.html">
+<link rel="import" href="../../bower_components/px-view-header/px-view-header.html">
+<link rel="import" href="../../bower_components/px-modal/px-modal.html"/>
+<link rel="import" href="../../bower_components/webcomponentsjs/webcomponents-lite.min.js"/>
+<link rel="import" href="../../bower_components/px-theme/px-theme-styles.html">
+<style include="px-theme-styles" is="custom-style"></style>
+
+<style media="screen">
+.heading{
+  padding-left: 30px;
+}
+#headericon{
+  width: 0px;
+}
+#modal28,#modal33,#modal47{
+  padding-left: 30px;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+#modal29,#modal30,#modal31,#modal32,#modal34,#modal35,#modal45,#modal46,#modal48,#modal53{
+  padding-right:5px;
+  padding-top: 5px;
+}
+.modal-trigger{
+  border: 1px solid #2886af;
+  border-radius: 5px;
+}
+.modal-trigger:hover{
+  cursor: pointer;
+  border: 3px solid #2886af;
+}
+.status_option{
+  color:#ffffff;
+  background-color: #fb2f28;
+}
+#modal28 header,#modal29 header,#modal30 header,#modal31 header,#modal32 header,#modal33 header,#modal34 header,#modal35 header,#modal45 header,#modal46 header,#modal47 header,#modal48 header,#modal53 header{
+  border-bottom: 0 !important;
+}
+#modal28 #headertext{
+  margin-left: 50px;
+  margin-top: 32px !important;
+}
+#modal29 #headertext{
+  margin-left: 45px;
+  margin-top: 31px !important;
+}
+#modal30 #headertext{
+  margin-left: 65px;
+  margin-top: 31px !important;
+}
+#modal31 #headertext{
+  margin-left: 25px;
+  margin-top: 31px !important;
+}
+#modal32 #headertext{
+  margin-left: 65px;
+  margin-top: 32px !important;
+}
+#modal33 #headertext{
+  margin-left: 50px;
+  margin-top: 12px !important;
+}
+#modal34 #headertext{
+  margin-left: 30px;
+  margin-top: 31px !important;
+}
+#modal35 #headertext{
+  margin-left: 20px;
+  margin-top: 31px !important;
+}
+#modal45 #headertext{
+  margin-left: 20px;
+  margin-top: 31px !important;
+}
+#modal46 #headertext{
+  margin-left: 20px;
+  margin-top: 31px !important;
+}
+#modal47 #headertext{
+  margin-left: 20px;
+  margin-top: 48px !important;
+}
+#modal48 #headertext{
+  margin-left: 20px;
+  margin-top: 31px !important;
+}
+#modal53 #headertext{
+  margin-left: 20px;
+  margin-top: 10px !important;
+}
+
+</style>
+
+<dom-module id="thingKnow-view">
+  <template>
+
+    <h3 class="heading">Things You Should Know</h3>
+    <px-modal id = "modal28" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="GE Box">
+      <px-card id = "card28" class = "modal-trigger" header-text="GE Box" style="width:200px;height:110px;background-color:#ffffff;">
+
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>The GE Box team has provided you with a box account to store, share, and access your files online
+        <br><br>Step 1: Please <a href = "https://ge.account.box.com/login" target="_blank" >visit</a> here.
+        <br>Step 2: GE Employees and Contractors with a SSO and GE Email ID please select "Continue" to log  in.
+        <br>Step 3: Please go through 'Box- Get Started here' documents.
+        <br>Step 4: Install 'Box Sync' to share files/folders via windows folders.
+      </p>
+    </px-modal>
+    <px-modal id = "modal29" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Yammer">
+      <px-card id = "card29" class = "modal-trigger" header-text="Yammer" style="width:200px;height:110px;background-color:#ffffff;">
+
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>Yammer is for connecting with your co-workers at ge.com
+        <br><br>Step 1: Please <a href = "https://www.yammer.com/ge.com" target="_blank">Visit</a> here.
+        <br>Step 2: Create a profile, join/create groups & follow your colleagues to stay updated.
+        <br>Step 3: Join <a href = "https://www.yammer.com/ge.com/#/threads/inGroup?type=in_group&feedId=9940174" target="_blank">DNA Group</a> in Yammer.
+      </p>
+    </px-modal>
+    <px-modal id = "modal30" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="PD">
+      <px-card id = "card30" class = "modal-trigger" header-text="PD" style="width:200px;height:110px;background-color:#ffffff;">
+
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>
+        Visit <a href = "https://pd.ge.com/" target="_blank">https://pd.ge.com/</a> to know more about PD@GE.
+      </p>
+    </px-modal>
+    <px-modal id = "modal31" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="BrilliantYou">
+      <px-card id = "card31" class = "modal-trigger" header-text="BrilliantYou" style="width:200px;height:110px;background-color:#ffffff;">
+
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>
+        BrilliantYOU is a learning community that expands Crotonville’s reach in developing the best leaders in the world.
+        <br><br>Please <a href = "https://www.gebrilliantyou.com/home" target="_blank">click here</a> to know more.
+      </p>
+
+    </px-modal>
+    <px-modal id = "modal32" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="VIC">
+      <px-card id = "card32" class = "modal-trigger" header-text="VIC" style="width:200px;height:110px;background-color:#ffffff;">
+
+      </px-card>
+      <p>
+        <b>Instructions</b>
+      </p>
+      <p>
+        <b>Did you know that in addition to your pay history, your <a href = "https://employeeprofile.ge.com/employeeprofile/onehr/me" target="_blank">Annual Comp</a> Profile includes your bonus eligibility information!</b>
+        <br><br><b>What you should do by January 13th…</b>
+        <br>1. <a href = "https://employeeprofile.ge.com/employeeprofile/onehr/me" target="_blank">Click here</a> to access your Annual Compensation Profile
+        <br>2. Review and validate your 2016 bonus eligibility effective dates, individual target, and plan name (data prior to 2016 may look different but was validated separately)
+        <br>3.  Not sure how to interpret the information in your Annual Comp Profile? <a href = "https://ge.box.com/v/BonusDataFAQ" target="_blank">Click here</a> for FAQs
+        <br>4.  Something doesn’t look right? Get in touch with your HR contact no later than January 13th
+        <br><br><a href ="https://employeeprofile.ge.com/employeeprofile/onehr/me" target="_blank">Access your Annual Comp Profile today!</a>
+        <br><br>Go to the <a href = "https://onehr.ge.com/sl/digitalvic" target="_blank">GE Digital VIC</a> site to learn more about your Variable Incentive Compensation (VIC) plan.
+      </p>
+    </px-modal>
+
+  </px-modal>
+  <px-modal id = "modal33" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Colab">
+    <px-card id = "card33" class = "modal-trigger" header-text="Colab" style="width:200px;height:110px;background-color:#ffffff;">
+
+    </px-card>
+    <p>
+      <b>Instructions</b>
+    </p>
+    <p>
+      Easy online collaboration with Colab.<a href ="http://colab.ge.com/dashboard/stream" target="_blank">Click here</a> to get started.
+      <br>Step 1: Get your profile started
+      <br>Step 2: Update and verify your public profile content, including your bio and expertise.
+      <br>Step 3: This information will be searchable for your colleagues and used to connect you with similar employees.
+    </p>
+  </px-modal>
+
+</px-modal>
+<px-modal id = "modal34" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Manage Your Accounts">
+  <px-card id = "card34" class = "modal-trigger" header-text="Manage Your Accounts" style="width:200px;height:110px;background-color:#ffffff;">
+
+  </px-card>
+  <p>
+    <b>Instructions</b>
+  </p>
+  <p>
+    A single place to request and manage your system access.
+    <br><br>Please <a href = "https://oneidm.ge.com/" target="_blank">click here</a> to know more
+  </p>
+
+</px-modal>
+
+</px-modal>
+<px-modal id = "modal35" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Power points templates">
+  <px-card id = "card35" class = "modal-trigger" header-text="Power points templates" style="width:200px;height:110px;background-color:#ffffff;">
+
+  </px-card>
+  <p>
+    <b>Instructions</b>
+  </p>
+  <p>
+    To get the ppt templates according to GE standards, Please <a href = "http://www.gebrandcentral.com/article/for-employees/#powerpointtemplatesscreensaver" target="_blank">click here</a>.
+  </p>
+
+</px-modal>
+
+</px-modal>
+<px-modal id = "modal45" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Know Your Benefits">
+  <px-card id = "card45" class = "modal-trigger" header-text="Know Your Benefits" style="width:200px;height:110px;background-color:#ffffff;">
+
+  </px-card>
+  <p>
+    <b>Instructions</b>
+  </p>
+  <p>
+    Become familiar with your benefits and policies that apply to you at <a href = "https://benefits.ge.com" target="_blank">Benefits Portal</a>
+
+<br><br><b>HR Edge Helpdesk</b>
+
+<br>Monday through Friday from 08:45 a.m. to 08:45 p.m. IST
+<br>Toll Free # - 1800 102 6662
+<br>e-Mail - <a href = "mailto:EDGE.HROI@ge.com" target="_blank">EDGE.HROI@ge.com</a>
+<br>Chat <a href = "https://gcrm.ge.com/" target="_blank">Here</a>
+  </p>
+
+</px-modal>
+
+</px-modal>
+<px-modal id = "modal46" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Social Media Guidelines">
+  <px-card id = "card46" class = "modal-trigger" header-text="Social Media Guidelines" style="width:200px;height:110px;background-color:#ffffff;">
+
+  </px-card>
+  <p>
+    <b>Instructions</b>
+  </p>
+  <p>
+    Become familiar with GE social media guidelines for GE employees and contractors. Refer to GE Brand Central to familiarize yourself with GE brand. <a href ="https://ge.box.com/SocialMediaGuidelinesEmployees" target="_blank">Click here</a> to know more
+
+  <br><br><b>Contact:-</b>
+
+  <br>Amit Bajaj
+  <br>Communications Leader Brand & Social Media
+  <br>e-Mail - <a href ="mailto:amit.bajaj@ge.com" target="_blank">amit.bajaj@ge.com</a>
+  </p>
+
+</px-modal>
+
+</px-modal>
+<px-modal id = "modal47" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Indirect sourcing process">
+  <px-card id = "card47" class = "modal-trigger" header-text="Indirect sourcing process" style="width:200px;height:110px;background-color:#ffffff;">
+
+  </px-card>
+  <p>
+    <b>Instructions</b>
+  </p>
+  <p>
+    Understand Indirect sourcing process & policy for leveraging the same in fulfilling your needs for indirect goods/services. <a href ="http://supportcentral.ge.com/products/sup_products.asp?prod_id=315780" target="_blank">Click here</a> to know more
+  </p>
+
+</px-modal>
+
+</px-modal>
+
+</px-modal>
+<px-modal id = "modal48" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="GOI approved map">
+  <px-card id = "card48" class = "modal-trigger" header-text="GOI approved map" style="width:200px;height:110px;background-color:#ffffff;">
+
+  </px-card>
+  <p>
+    <b>Instructions</b>
+  </p>
+  <p>
+    Become familiar with approved maps that should be used, only if required, in the PowerPoint presentations and otherwise. Please note that displaying an incorrect map is an offence under Indian Law (Section 69A of IT Act, 2000). If you need to refer, use or embed a map of India in any of your pitches, please download and use the latest version from here. This map is the vetted map by the nodal agency, The Survey of India.
+
+<br><br><a href ="http://supportcentral.ge.com/products/sup_products.asp?prod_id=315780" target="_blank">Click here</a> to view the map.
+
+<br><br><b>Contact:-</b>
+
+<br>Amit Bajaj
+<br>Communications Leader Brand & Social Media
+<br>e-Mail - <a href ="mailto:amit.bajaj@ge.com" target="_blank">amit.bajaj@ge.com</a>  </p>
+
+</px-modal>
+
+<px-modal id = "modal53" btn-modal-positive="Yes, I have Completed!" btn-modal-negative="Later" modal-heading="Reimbursements">
+  <px-card id = "card53" class = "modal-trigger" header-text="Reimbursements" style="width:200px;height:110px;background-color:#ffffff;">
+
+  </px-card>
+  <p>
+    <b>Instructions</b>
+  </p>
+  <p>
+    Please visit <a href="https://www.concursolutions.com/home.asp" target = "_blank">https://www.concursolutions.com/home.asp</a> for your expense reimbursement.
+<br><br>For more information please visit <a href = "https://www.concursolutions.com/expense/client/view_training.asp" target="_blank">https://www.concursolutions.com/expense/client/view_training.asp</a>
+
+</px-modal>
+
+
+</template>
+  <script>
+
+    Polymer({
+      is: 'thingKnow-view',
+      properties: {
+        status: {
+          type:String,
+          value : "#ffffff"
+        }
+      },
+
+      setValue: function() {
+       this.status = "true";
+     },
+
+      ready: function() {
+      },
+
+      attached: function (){
+          document.getElementById("modal28").addEventListener('btnModalPositiveClicked', function() {
+          this.status = "#99d03e";
+          document.getElementById("card28").style.background = this.status;
+          //alert("Hello positive--modal6 "+this.status);
+          });
+
+          document.getElementById("modal28").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card28").style.background = this.status;
+          //alert("Hello Negative--modal6");
+          });
+
+          document.getElementById("modal29").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card29").style.background = this.status;
+          });
+
+          document.getElementById("modal29").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card29").style.background = this.status;
+          });
+
+          document.getElementById("modal30").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card30").style.background = this.status;
+          });
+
+          document.getElementById("modal30").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card30").style.background = this.status;
+          });
+
+          document.getElementById("modal31").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card31").style.background = this.status;
+          });
+
+          document.getElementById("modal31").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card31").style.background = this.status;
+          });
+
+          document.getElementById("modal32").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card32").style.background = this.status;
+          });
+
+          document.getElementById("modal32").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card32").style.background = this.status;
+          });
+
+          document.getElementById("modal33").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card33").style.background = this.status;
+          });
+
+          document.getElementById("modal33").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card33").style.background = this.status;
+          });
+
+          document.getElementById("modal34").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card34").style.background = this.status;
+          });
+
+          document.getElementById("modal34").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card34").style.background = this.status;
+          });
+
+          document.getElementById("modal35").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card35").style.background = this.status;
+          });
+
+          document.getElementById("modal35").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card35").style.background = this.status;
+          });
+
+          document.getElementById("modal45").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card45").style.background = this.status;
+          });
+
+          document.getElementById("modal45").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card45").style.background = this.status;
+          });
+
+          document.getElementById("modal46").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card46").style.background = this.status;
+          });
+
+          document.getElementById("modal46").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card46").style.background = this.status;
+          });
+
+          document.getElementById("modal47").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card47").style.background = this.status;
+          });
+
+          document.getElementById("modal47").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card47").style.background = this.status;
+          });
+
+          document.getElementById("modal48").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card48").style.background = this.status;
+          });
+
+          document.getElementById("modal48").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card48").style.background = this.status;
+          });
+
+          document.getElementById("modal53").addEventListener('btnModalPositiveClicked', function() {
+            this.status = "#99d03e";
+            document.getElementById("card53").style.background = this.status;
+          });
+
+          document.getElementById("modal53").addEventListener('btnModalNegativeClicked', function() {
+            this.status = "#ffffff";
+            document.getElementById("card53").style.background = this.status;
+          });
+
+      }
+  });
+  </script>
+</dom-module>
