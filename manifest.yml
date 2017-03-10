@@ -7,7 +7,6 @@ applications:
     path: dist
 
 
-
 #services:
  # - <your-name>-secure-uaa-instance
  # - <your-name>-timeseries-instance
