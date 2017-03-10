@@ -1,11 +1,10 @@
 ---
 applications:
-  - name: OnboardingBuddy
-    memory: 512M
+  - name: OnboardingBuddyTest-srs
+    memory: 64M
     buildpack: nodejs_buildpack
     command: node server/app.js
     path: dist
-
 
 #services:
  # - <your-name>-secure-uaa-instance
